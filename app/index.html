@@ -10,6 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -18,70 +19,62 @@
     <script src="scripts/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header class="p-3 mb-3 border-bottom">
+  <body class="">
+  <div class="body-wrapper">
+    <header class="p-3 mb-3 border-bottom bg-white shadow-sm">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 mee-md-auto text-dark text-decoration-none header-brand">
             <img src="images/logo-argentina-programa-2022-black.svg" alt="Logo Argentina Programa 2022" height="32px">
-            <span class="fs-5 ms-1">Argentina programa #YoProgramo</span>
           </a>
+          <span class="fs-5 ms-1 me-md-auto">Argentina programa #YoProgramo</span>
 
           <ul class="nav col-12 col-lg-auto me-2 mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
           </ul>
 
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" style="">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
+          <button type="button" class="btn btn-outline-indigo me-2">Login</button>
         </div>
       </div>
     </header>
+    <section class="portfolio-section banner"></section>
+    <section class="main-content container">
+      <div class="row">
+        <div class="col-12">
+          <section id="experiencia" class="portfolio-section shadow-sm bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <div class="widget-wrapper">
+                    <h6 class="widget widget-rotated-title-90">EXPERIENCIA</h6>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div id="column-id-1479187666456" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1479187666471" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left "><h2 class="sppb-addon-title">Ares Murphy</h2><div class="sppb-addon-content"><h6 style="letter-spacing: 2.4px;"><strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6></div></div></div><div id="sppb-addon-1479187666480" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info"><div class="sppb-addon-content"><p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</p>
+                  <br><br>
+                  <ul>
+                  <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
+                  <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
+                  <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
+                  <li><a>GENDER :</a><strong>MALE</strong></li>
+                  <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
+                  <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
+                  </ul></div></div></div><div id="sppb-addon-1479187666489" class="clearfix"><a target="_blank" href="/2016/ares-murphy/media/attachments/2016/11/23/sample-pdf.pdf" id="btn-1479187666489" class="sppb-btn  sppb-btn-primary sppb-btn-lg sppb-btn-rounded">DOWNLOAD MY RESUME</a></div></div></div>
 
 
-
-    <div class="container-fluid">
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+                  </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+    </section>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div>
+    <footer>
+    </footer>
+  </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -99,5 +92,6 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
   </body>
 </html>
