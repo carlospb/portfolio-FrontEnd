@@ -10,7 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" type="text/css" />
+    <link rel="stylesheet" href="styles/bootstrap-icons.css" type="text/css" />
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -35,11 +35,78 @@
             <li><a href="#" class="nav-link px-2 link-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
           </ul>
 
-          <button type="button" class="btn btn-outline-indigo me-2">Login</button>
+          <button id="btnLoginLogout" type="button"
+            class="btn btn-outline-indigo me-2"
+            onclick="App.checkLoginStatus();">Login</button>
         </div>
       </div>
     </header>
-    <section class="portfolio-section banner"></section>
+    <section class="portfolio-section banner mt-3 p-0"></section>
+    <section class="main-content container">
+      <div class="row">
+        <div class="col-12">
+          <section id="acercade" class="portfolio-section shadow-sm bg-white pt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <div id="avatar-wrapper" style="margin-top: -150px !important;"
+                    class="rounded-circle col-6 bg-light m-auto shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                    </svg>
+                  </div>
+                  <h2 class="acercade-name text-center mt-5">Carlos Pérez</h2>
+                  <div class="acercade-title text-center">
+                    <h6 style="letter-spacing: 2.4px;">
+                      <strong>FULL STACK DEVELOPER</strong>
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="">
+                    <div class="sppb-column-addons">
+                      <div class="clearfix">
+                        <div class="sppb-addon sppb-addon-text-block sppb-text-left ">
+                          <h2 class="sppb-addon-title">CAPERZ BAY</h2>
+                          <div class="sppb-addon-content">
+                            <h6 style="letter-spacing: 2.4px;">
+                              <strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="sppb-addon-1479187666480" class="clearfix">
+                        <div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info">
+                          <div class="sppb-addon-content">
+                            <p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet,
+                              consectetur adipiscing elit. Integer adipiscing erat eget
+                              risus sollicitudin pellentesque et non erat.
+                              Maecenas nibh dolor, malesuada et bibendum a, sagittis
+                              accumsan ipsum. Pellentesque ultrices ultrices sapien,
+                              nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet,
+                              consectetur adipiscing elit. Nam scelerisque tristique dolor
+                              vitae tincidunt. Aenean quis massa uada mi elementum elementum.
+                              Nec sapien convallis vulputate rhoncus vel dui.</p>
+                            <br><br>
+                            <ul>
+                              <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
+                              <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
+                              <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
+                              <li><a>GENDER :</a><strong>MALE</strong></li>
+                              <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
+                              <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
     <!-- EXPERIENCIA -->
     <section class="main-content container">
       <div class="row">
@@ -53,19 +120,8 @@
                   </div>
                 </div>
                 <div class="col-8">
-                  <div id="column-id-1479187666456" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1479187666471" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left "><h2 class="sppb-addon-title">Ares Murphy</h2><div class="sppb-addon-content"><h6 style="letter-spacing: 2.4px;"><strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6></div></div></div><div id="sppb-addon-1479187666480" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info"><div class="sppb-addon-content"><p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</p>
-                  <br><br>
-                  <ul>
-                  <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
-                  <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
-                  <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
-                  <li><a>GENDER :</a><strong>MALE</strong></li>
-                  <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
-                  <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
-                  </ul></div></div></div><div id="sppb-addon-1479187666489" class="clearfix"><a target="_blank" href="/2016/ares-murphy/media/attachments/2016/11/23/sample-pdf.pdf" id="btn-1479187666489" class="sppb-btn  sppb-btn-primary sppb-btn-lg sppb-btn-rounded">DOWNLOAD MY RESUME</a></div></div></div>
+                </div>
 
-
-                  </div>
               </div>
             </div>
           </section>
@@ -76,7 +132,7 @@
     <section class="main-content container">
       <div class="row">
         <div class="col-12">
-          <section id="experiencia" class="portfolio-section shadow-sm bg-white">
+          <section id="educacion" class="portfolio-section shadow-sm bg-white">
             <div class="container">
               <div class="row">
                 <div class="col-2">
@@ -85,19 +141,7 @@
                   </div>
                 </div>
                 <div class="col-8">
-                  <div id="column-id-1479187666456" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1479187666471" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left "><h2 class="sppb-addon-title">Ares Murphy</h2><div class="sppb-addon-content"><h6 style="letter-spacing: 2.4px;"><strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6></div></div></div><div id="sppb-addon-1479187666480" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info"><div class="sppb-addon-content"><p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</p>
-                  <br><br>
-                  <ul>
-                  <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
-                  <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
-                  <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
-                  <li><a>GENDER :</a><strong>MALE</strong></li>
-                  <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
-                  <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
-                  </ul></div></div></div><div id="sppb-addon-1479187666489" class="clearfix"><a target="_blank" href="/2016/ares-murphy/media/attachments/2016/11/23/sample-pdf.pdf" id="btn-1479187666489" class="sppb-btn  sppb-btn-primary sppb-btn-lg sppb-btn-rounded">DOWNLOAD MY RESUME</a></div></div></div>
-
-
-                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -108,7 +152,7 @@
     <section class="main-content container">
       <div class="row">
         <div class="col-12">
-          <section id="experiencia" class="portfolio-section shadow-sm bg-white">
+          <section id="hardandsoftskills" class="portfolio-section shadow-sm bg-white">
             <div class="container">
               <div class="row">
                 <div class="col-2">
@@ -117,19 +161,8 @@
                   </div>
                 </div>
                 <div class="col-8">
-                  <div id="column-id-1479187666456" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1479187666471" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left "><h2 class="sppb-addon-title">Ares Murphy</h2><div class="sppb-addon-content"><h6 style="letter-spacing: 2.4px;"><strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6></div></div></div><div id="sppb-addon-1479187666480" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info"><div class="sppb-addon-content"><p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</p>
-                  <br><br>
-                  <ul>
-                  <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
-                  <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
-                  <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
-                  <li><a>GENDER :</a><strong>MALE</strong></li>
-                  <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
-                  <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
-                  </ul></div></div></div><div id="sppb-addon-1479187666489" class="clearfix"><a target="_blank" href="/2016/ares-murphy/media/attachments/2016/11/23/sample-pdf.pdf" id="btn-1479187666489" class="sppb-btn  sppb-btn-primary sppb-btn-lg sppb-btn-rounded">DOWNLOAD MY RESUME</a></div></div></div>
 
-
-                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -140,7 +173,7 @@
     <section class="main-content container">
       <div class="row">
         <div class="col-12">
-          <section id="experiencia" class="portfolio-section shadow-sm bg-white">
+          <section id="proyectos" class="portfolio-section shadow-sm bg-white">
             <div class="container">
               <div class="row">
                 <div class="col-2">
@@ -149,19 +182,7 @@
                   </div>
                 </div>
                 <div class="col-8">
-                  <div id="column-id-1479187666456" class="sppb-column"><div class="sppb-column-addons"><div id="sppb-addon-1479187666471" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left "><h2 class="sppb-addon-title">Ares Murphy</h2><div class="sppb-addon-content"><h6 style="letter-spacing: 2.4px;"><strong>UI &amp; UX DESIGNER </strong>@ JOOMSHAPER LLC</h6></div></div></div><div id="sppb-addon-1479187666480" class="clearfix"><div class="sppb-addon sppb-addon-text-block sppb-text-left ares-about-info"><div class="sppb-addon-content"><p style="font-size: 18px; line-height: 1.67;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</p>
-                  <br><br>
-                  <ul>
-                  <li><a>DATE OF BIRTH :</a><strong>MARCH 19, 1988</strong></li>
-                  <li><a>NATIONALITY :</a><strong>AMERICAN, USA</strong></li>
-                  <li><a>ADDRESS :</a><strong>MONICA BLVD, LOS ANGELES, USA 3200</strong></li>
-                  <li><a>GENDER :</a><strong>MALE</strong></li>
-                  <li><a>MARITAL STATUS :</a><strong>SINGLE</strong></li>
-                  <li><a>SKYPE :</a><strong>ARES_MURPHY</strong></li>
-                  </ul></div></div></div><div id="sppb-addon-1479187666489" class="clearfix"><a target="_blank" href="/2016/ares-murphy/media/attachments/2016/11/23/sample-pdf.pdf" id="btn-1479187666489" class="sppb-btn  sppb-btn-primary sppb-btn-lg sppb-btn-rounded">DOWNLOAD MY RESUME</a></div></div></div>
-
-
-                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -228,8 +249,42 @@
         </div>
       </div>
     </footer>
-
   </div>
+
+
+  <div class="modal fade py-5"
+         tabindex="-1" role="dialog" id="modalSignin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-5 pt-0 text-center">
+
+              <form id="formLogin">
+                <img src="images/logo-argentina-programa-2022-black.svg"
+                  class="mb-4"
+                  alt="Logo Argentina Programa 2022" height="64">
+                <h1 class="h3 mb-3 fw-normal">Modo Edición</h1>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                  <label for="floatingInput" class="text-start">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                  <label for="floatingPassword" class="text-start">Contraseña</label>
+                </div>
+                <button id="btnFormLogin" class="w-100 btn btn-lg btn-primary" type="submit">Activar</button>
+                <p class="mt-5 mb-3 text-muted">©2022</p>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

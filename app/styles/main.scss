@@ -24,17 +24,12 @@ body {
 
 /* Custom page header */
 section.banner {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
-  padding-top: 220px;
-  padding-right: 0px;
-  padding-bottom: 160px;
-  padding-left: 0px;
   background-image: url('https://demo2.joomshaper.com/2021/luxyort/images/2021/06/01/header-bg-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-position: 50% 50%;
+  min-height: 300px !important;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -146,8 +141,12 @@ transform-origin: left bottom;
 top: 0;
 white-space: nowrap; }
 
-/* EXPERIENCIA */
-#experiencia {
+
+/* ACERCA DE */
+#acercade {
+  margin: 0 !important;
+}
+.portfolio-section {
   margin: 50px 0 0;
   padding: 120px 0 100px 0;
   min-height: 600px;
@@ -163,4 +162,9 @@ white-space: nowrap; }
   top: 20px;
   bottom: 0;
   width: 1px;
+}
+
+.btn-logout {
+  background-color: #6610f2;
+  color: #fff;
 }
