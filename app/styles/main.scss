@@ -7,8 +7,15 @@
 
 body {
   background-color: #E6E9ED !important;
+  font-family: 'Lato', sans-serif;
 }
-
+h1,h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
 .row:before {
   content: " ";
   display: table;
@@ -117,42 +124,20 @@ section.banner {
   border-color: #001f3f;
 }
 
+.btn-logout {
+  background-color: #6610f2;
+  color: #fff;
+}
 
 
 /* SECTIONS */
-.widget-wrapper { position: relative; }
-.widget.widget-rotated-title-90 { color: rgba(0,0,0,0.25);
-font-size: 16px;
-font-weight: 700;
-left: auto;
-letter-spacing: 3.2px;
-margin: 0 !important;
-position: absolute;
-left: 96px;
-text-transform: uppercase;
--webkit-transform: rotate(90deg);
-transform: rotate(90deg);
-display: inline-block;
-background: #fff;
-padding-right: 18px !important;
-margin-top: -10px !important;
--webkit-transform-origin: left bottom;
-transform-origin: left bottom;
-top: 0;
-white-space: nowrap; }
-
-
-/* ACERCA DE */
-#acercade {
-  margin: 0 !important;
-}
 .portfolio-section {
-  margin: 50px 0 0;
-  padding: 120px 0 100px 0;
+  padding: 50px 0 60px 0;
   min-height: 600px;
+  border-bottom: 1px solid #f2f5f7;
 }
-
-.portfolio-section .container .row .col-2 { position: relative;}
+.portfolio-section .container, .portfolio-section .container .row .col-2, .portfolio-section .container .row .col-8 { padding: 0 15px; }
+.portfolio-section .container .row .col-2 { position: relative; width: 0px; }
 .portfolio-section .container .row .col-2:before {
   background: rgba(0,0,0,0.1);
   content: "";
@@ -162,9 +147,51 @@ white-space: nowrap; }
   top: 20px;
   bottom: 0;
   width: 1px;
+  min-height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio-section .container .row .col-2::before {
+    right: 8px;
+  }
 }
 
-.btn-logout {
-  background-color: #6610f2;
-  color: #fff;
+/* ACERCA DE */
+#acercade {
+  margin: 0 !important;
 }
+
+/* WIDGETS */
+.widget-wrapper { position: relative; }
+.widget.widget-rotated-title-90 {
+  color: rgba(0,0,0,0.25);
+  font-size: 16px;
+  font-weight: 700;
+  left: auto;
+  letter-spacing: 3.2px;
+  margin: 0 !important;
+  position: absolute;
+  left: 96px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: inline-block;
+  background: #fff;
+  padding-right: 18px !important;
+  margin-top: -10px !important;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  top: 0;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio-section .widget-wrapper .widget-title {
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
