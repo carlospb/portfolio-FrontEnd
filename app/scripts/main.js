@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 // Uncomment to enable Bootstrap tooltips
 // https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
 // $(function () { $('[data-toggle="tooltip"]').tooltip(); });
@@ -8,10 +6,56 @@ console.log('\'Allo \'Allo!');
 // https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
-let i = 0;
+const App = {
+  loginStatus:    false,
+  btnLoginLogout: null,
+  modalLogin:     null,
 
-function getItem() { i++; console.log(i, 'GET_ITEM'); console.log(new Date());  }
-function getTagTrend() { console.log('GET_TREND'); console.log(new Date()); }
+  init: function() {
+    console.log("Init...");
+    this.btnLoginLogout = document.getElementById('btnLoginLogout'),
+    this.modalLogin     = new bootstrap.Modal('#modalSignin', {
+      keyboard: false
+    });
 
-let getTagTrendTimer = setTimeout(function myTimer() { getTagTrend(); getTagTrendTimer = setTimeout(myTimer, 30000);}, 30000);
-let getItemTimer = setTimeout(function myTimer() { getItem(); getItemTimer = setTimeout(myTimer, 5000); }, 5000);
+    /*
+    document.getElementById('btnFormLogin').addEventListener('click', function(event) {
+      event.preventDefault();
+
+    });*/
+    let form = document.getElementById('formLogin');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (!form.checkValidity()) {
+
+      } else {
+        // envía username y password para ser validados por la API
+
+      }
+
+
+    }, false)
+  },
+  checkLoginStatus: function() {
+    if (this.loginStatus) {
+      // está logeado debemos realizar el logout!!!
+      App.btnLoginLogout.innerText = 'Login';
+      this.loginStatus             = false;
+    } else {
+      App.modalLogin.show();
+
+
+      App.btnLoginLogout.innerText='Logout';
+      App.btnLoginLogout.classList.add('btn-logout')
+      App.loginStatus=true;
+
+
+    }
+  }
+};
+
+
+// App Init
+App.init();
